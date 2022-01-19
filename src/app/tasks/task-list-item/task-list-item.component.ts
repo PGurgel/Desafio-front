@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, } from '@angular/core';
+import { TAREFAS } from 'src/app/mock-tarefas';
+import { Tarefa} from 'src/app/tarefa.model';
 
 @Component({
   selector: 'spa-task-list-item',
   templateUrl: './task-list-item.component.html',
   styleUrls: ['./task-list-item.component.css']
 })
-export class TaskListItemComponent implements OnInit {
+export class TaskListItemComponent{
+  tarefa: Tarefa = {
+    id: 1,
+    name: 'Pedro',
+    titulo: 'desenvolver app'
+  };
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  tarefas = TAREFAS;
 }

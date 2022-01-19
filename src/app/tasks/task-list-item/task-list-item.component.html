@@ -1,39 +1,9 @@
 <div class="container">
-    <main class="py-3 my-4">
-      <h3>Listagem de Tarefas</h3>
-      <hr/>
-  
-    </main>
-    <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="ID" aria-label="Id">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Descrição" aria-label="Descrição">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
-          </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="ID" aria-label="Id">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Descrição" aria-label="Descrição">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
-          </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="ID" aria-label="Id">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Descrição" aria-label="Descrição">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
-          </div>
-      </div>
+  <main class="py-3 my-4">
+    <h3>Tarefas</h3>
+    <hr/>
+  </main>
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let tarefa of tarefas " class="list-group-item"> <span>{{tarefa.id}} </span>{{tarefa.name}} : <span>{{tarefa.titulo}}</span></li>
+   </ul>    
+</div>
