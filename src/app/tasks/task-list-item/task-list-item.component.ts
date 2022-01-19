@@ -8,11 +8,12 @@ import { Tarefa} from 'src/app/tarefa.model';
   styleUrls: ['./task-list-item.component.css']
 })
 export class TaskListItemComponent{
-  tarefa: Tarefa = {
+  tarefa = {
     id: 1,
     name: 'Pedro',
-    titulo: 'desenvolver app'
+    titulo: 'Desenvolver aplicação',
   };
 
   tarefas = TAREFAS;
+
 }

@@ -19,7 +19,7 @@ form{
     color: #ffff;
     text-decoration:inherit;
 }
-input[type="email"],
+input[type="text"],
 input[type='password']{
     border-radius: 10px;
     margin-bottom: 25px;

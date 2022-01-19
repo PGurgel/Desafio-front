@@ -10,7 +10,6 @@ import { LayoutComponent } from './layout/layout.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { TaskListComponent } from './tasks/task-list/task-list.component';
 import { TaskListItemComponent } from './tasks/task-list-item/task-list-item.component';
-import { TaskListFormComponent } from './tasks/task-list-form/task-list-form.component';
 import { FormsModule } from '@angular/forms';
 import { CreateLoginComponent } from './create-login/create-login.component';
 
@@ -24,7 +23,6 @@ import { CreateLoginComponent } from './create-login/create-login.component';
     LayoutComponent,
     TaskListComponent,
     TaskListItemComponent,
-    TaskListFormComponent,
     CreateLoginComponent,
   ],
   imports: [
