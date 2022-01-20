@@ -1,6 +1,5 @@
 import { Component, } from '@angular/core';
 import { TAREFAS } from 'src/app/mock-tarefas';
-import { Tarefa} from 'src/app/tarefa.model';
 
 @Component({
   selector: 'spa-task-list-item',
